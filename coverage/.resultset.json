@@ -6,7 +6,6 @@
           1,
           null,
           1,
-          null,
           4,
           3,
           2,
@@ -73,7 +72,6 @@
       "/Users/Paul/Projects/week-10/Bank/lib/transaction.rb": {
         "lines": [
           1,
-          null,
           1,
           null,
           1,
@@ -91,7 +89,6 @@
           1,
           null,
           1,
-          null,
           3,
           2,
           2,
@@ -109,6 +106,6 @@
         ]
       }
     },
-    "timestamp": 1599478818
+    "timestamp": 1599479982
   }
 }

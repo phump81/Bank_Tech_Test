@@ -1,7 +1,6 @@
 require 'account'
 
 describe Account do
-
   let(:account) { Account.new }
   let(:deposit) { account.deposit(1000) }
   let(:withdrawal) { account.withdraw(500) }

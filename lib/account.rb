@@ -1,7 +1,6 @@
 require_relative 'transaction'
 
 class Account
-
   attr_reader :balance, :transactions
 
   def initialize(balance = 0, transaction: Transaction)
@@ -23,8 +22,7 @@ class Account
   end
 
   def statement
-    puts "date || credit || debit || balance"
-
+    puts 'date || credit || debit || balance'
     @transactions.reverse.each do |transaction|
       puts "#{transaction.date} || #{transaction.credit} || #{transaction.debit} || #{transaction.balance}"
     end
