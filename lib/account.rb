@@ -3,6 +3,7 @@ class Account
 
   def initialize
     @balance = 0
+    @transactions = []
   end
 
   def deposit(amount)
@@ -11,5 +12,9 @@ class Account
 
   def withdraw(amount)
     @balance -= amount
+  end
+
+  def statement
+    print "date || credit || debit || balance"
   end
 end
