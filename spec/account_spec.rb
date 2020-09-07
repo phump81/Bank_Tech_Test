@@ -25,7 +25,7 @@ describe Account do
 
   describe '#statement' do
     it 'prints an empty statement' do
-      expect { account.statement }.to output("date || credit || debit || balance").to_stdout
+      expect { account.statement }.to output("date || credit || debit || balance\n").to_stdout
     end
   end
 end
