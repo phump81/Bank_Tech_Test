@@ -1,4 +1,4 @@
-### Bank Tech Test
+# Bank Tech Test
 
 ## Requirements
 
@@ -38,10 +38,10 @@ date || credit || debit || balance
 
 ## Screenshots
 
-# irb User Journey
+### irb User Journey
 
 <img src="./images/irb_screenshot.png" />
 
-# statement output
+### Statement Output
 
 <img src="./images/statement_screenshot.png" />
