@@ -8,16 +8,16 @@ describe Transaction do
 
   it 'creates a new deposit transaction' do
     deposit
-    expect(account.transactions.length).to eq(1)
-    expect(account.transactions[0].credit).to eq(1000)
-    expect(account.transactions[0].debit).to eq(nil)
+    expect(account.transaction_history.length).to eq(1)
+    expect(account.transaction_history[0].credit).to eq(1000)
+    expect(account.transaction_history[0].debit).to eq(nil)
   end
 
   it 'creates a new withdrawal transaction' do
     withdrawal
-    expect(account.transactions.length).to eq(1)
-    expect(account.transactions[0].credit).to eq(nil)
-    expect(account.transactions[0].debit).to eq(500)
+    expect(account.transaction_history.length).to eq(1)
+    expect(account.transaction_history[0].credit).to eq(nil)
+    expect(account.transaction_history[0].debit).to eq(500)
   end
 
   it 'adds two decimal places to an integer' do
