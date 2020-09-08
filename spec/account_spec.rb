@@ -7,18 +7,18 @@ describe Account do
 
   describe '#deposit' do
     it 'deposits 1000' do
-      expect(account.balance).to eq(0)
+      expect(account.current_balance).to eq(0)
       deposit
-      expect(account.balance).to eq(1000)
+      expect(account.current_balance).to eq(1000)
     end
   end
 
   describe '#withdrawal' do
     it 'deposits and makes a withdrawal' do
       deposit
-      expect(account.balance).to eq(1000)
+      expect(account.current_balance).to eq(1000)
       withdrawal
-      expect(account.balance).to eq(500)
+      expect(account.current_balance).to eq(500)
     end
   end
 

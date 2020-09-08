@@ -1,14 +1,14 @@
 class Transaction
-  attr_reader :date, :credit, :debit, :balance
+  attr_reader :date, :credit, :debit
 
-  def initialize(credit: nil, debit: nil, balance: nil)
+  def initialize(credit: nil, debit: nil)
     @date = Time.now.strftime('%d/%m/%Y')
-    @credit = and_pence(credit)
-    @debit = and_pence(debit)
-    @balance = and_pence(balance)
+    @credit = credit
+    @debit = debit
   end
 
-  def and_pence(amount)
-    '%.2f' % amount unless amount.nil?
+  def transaction_amount
+    return @credit unless @credit.nil?
+    return -@debit unless @debit.nil?
   end
 end
