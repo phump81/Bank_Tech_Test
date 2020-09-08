@@ -24,14 +24,24 @@ date || credit || debit || balance
 
 ## Class Diagrams
 
-<img src="class_diagrams.png" />
+<img src="./images/class_diagrams.png" />
 
-### Installation
+## Installation
 
 * Clone the repo https://github.com/phump81/Bank_Tech_Test.git
 * ```$ bundle install``` to install dependencies
 * ```$ irb -r './lib/account.rb'``` - launch REPL
 
-### To run tests
+## To run tests
 
 * ```$ rspec```
+
+## Screenshots
+
+# irb User Journey
+
+<img src="./images/irb_screenshot.png" />
+
+# statement output
+
+<img src="./images/statement_screenshot.png" />
