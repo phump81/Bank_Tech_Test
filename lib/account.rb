@@ -11,13 +11,13 @@ class Account
 
   def deposit(amount)
     @balance += amount
-    transaction = Transaction.new(amount, nil, @balance)
+    transaction = Transaction.new(credit: amount, balance: @balance)
     @transactions << transaction
   end
 
   def withdraw(amount)
     @balance -= amount
-    transaction = Transaction.new(nil, amount, @balance)
+    transaction = Transaction.new(debit: amount, balance: @balance)
     @transactions << transaction
   end
 
